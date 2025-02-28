@@ -33,3 +33,57 @@
     gap: 25px;
     padding: 25px 40px;
 }
+.dice-history {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 15px;
+    border: 1px solid black;
+    border-radius: 14px;
+    align-items: center;
+}
+.dice-history ul li {
+    list-style: none;
+}
+.dice-section {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.dices {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    justify-content: center;
+}
+.dice {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+    position: relative;
+    border-radius: 7px;
+}
+.dot {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+}
+button {
+    width: 34%;
+    padding: 20px 25px;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 5px;
+    
+}
+.red-dot {
+    background-color: red !important;
+}

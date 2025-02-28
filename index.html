@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/dice.css">
-    <script src="assets/js/dice.js"></script>
+    <script src="assets/js/dice.js" defer></script>
     <title>Roll the Dice</title>
 </head>
 <body>
@@ -13,11 +13,14 @@
         <div class="dice-inner">
             <div class="dice-history">
                 <h4>Geçmiş Sonuçlar</h4>
-                <ul id="historyList">2s</ul>
+                <ul id="historyList"></ul>
             </div>
             <div class="dice-section">
-                <div id="dice-1" class="dice"></div>
-                <div id="dice-2" class="dice"></div>
+                <div class="dices">
+                    <div id="dice1" class="dice"></div>
+                    <div id="dice2" class="dice"></div>
+                </div>
+                <button onclick="rollDice()">Zarları Salla</button>
             </div>
         </div>
     </div>
