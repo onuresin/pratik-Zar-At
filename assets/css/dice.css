@@ -4,3 +4,32 @@
     padding: 0;
     box-sizing: border-box;
 }
+.dice-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 80%;
+    align-items: center;
+}
+.dice-container h2 {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, rgb(182, 0, 0), rgb(0, 0, 0), rgb(3, 255, 87), rgb(255, 153, 0));
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientAnimation 3s infinite alternate;
+    display: inline-block;
+}
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+.dice-inner {
+    width: 100%;
+    display: flex;
+    gap: 25px;
+    padding: 25px 40px;
+}
